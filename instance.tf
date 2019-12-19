@@ -5,7 +5,7 @@ resource "aws_instance" "web" {
   key_name = aws_key_pair.deployer.key_name
   security_groups = ["allow_ssh"
 
-   user_data = file("userdata_file")
+   user_data = file"userdata_file"
  
 
 tags = { 
