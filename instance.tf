@@ -6,6 +6,6 @@ resource "aws_instance" "web" {
   key_name = aws_key_pair.deployer.key_name
 
 tags = { 
-    Name = "HelloWorld" 
+    Name = "HelloWorld".count.index 
   } 
 } 
