@@ -6,8 +6,9 @@ output "bucket_name" {
 
 
 }
-output "IPs"
+output "IPs"{
 value = aws_instance.web.*.public_ip
+}
 
 }
 
