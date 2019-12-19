@@ -3,5 +3,5 @@ resource "aws_route53_record" "www" {
   name    = "www.mehmetguler.net" 
   type    = "A" 
   ttl     = "300" 
-  records = ["aws_instance.web.public_ip"] 
+  records = ["aws_instance.web[0].public_ip"] 
 } 
