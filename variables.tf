@@ -8,5 +8,3 @@ variable "ssh_key_location" {}
 
 
 
-
-
