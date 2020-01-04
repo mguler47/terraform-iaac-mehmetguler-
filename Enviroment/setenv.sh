@@ -123,7 +123,7 @@ return 1
 
 fi 
 
-cat << EOF > "$DIR/backend.tf" 
+cat << EOF > "$DIR/backend.tf"
 
 terraform { 
 
@@ -137,6 +137,6 @@ region = "${S3BUCKETREGION}"
 
   } 
 
-} 
-EOF 
+}
+EOF
 cat backend.tf 
