@@ -6,9 +6,6 @@ echo "$0: Please source this file."
 echo "e.g. source ./setenv configurations/data-rnd-us-vet1-v1" 
 return 1 
 fi 
-
- 
-
 if [ -z "$1" ] 
 
 then 
@@ -20,15 +17,6 @@ then
    return 1 
 
 fi 
-
- 
-
- 
-
- 
-
- 
-
 # Get directory we are running from 
 
 DIR=$(pwd) 
@@ -150,7 +138,5 @@ region = "${S3BUCKETREGION}"
   } 
 
 } 
-
 EOF 
-
 cat backend.tf 
