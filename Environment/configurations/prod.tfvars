@@ -1,4 +1,4 @@
-environment = "qa" 
+environment = "prod" 
 s3_bucket = "terraform-us-mehmet"          #Will be used to set backend.tf 
 s3_folder_project = "application"          #Will be used to set backend.tf 
 s3_folder_region = "us-east-1"             #Will be used to set backend.tf 
