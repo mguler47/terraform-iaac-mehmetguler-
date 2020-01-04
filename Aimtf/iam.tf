@@ -8,16 +8,15 @@ resource "aws_iam_group" "developers" {
 }
 resource "aws_iam_group_membership" "developers_team" {
   name = "developers-group-membership"
-  users = [
-    aws_iam_user.tim.name
-  ]
-  group = aws_iam_group.developers.name
-}
-
-resource "aws_iam_policy" "policy" { 
-  name = "test_policy3" 
-  path = "/" 
-  description = "My test policy" 
+  users = [ 
+    aws_aim_user.tim.name
+    ]
+    group = aws_iam_group.developers.name
+    }
+    resource "aws_iam_policy" "policy" { 
+      name = "test_policy3"
+      path = "/"
+      description = "My test policy" 
   policy = <<EOF 
   { 
   "Version": "2012-10-17", 
