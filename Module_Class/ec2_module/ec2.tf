@@ -6,7 +6,7 @@ provider "aws"{
 
 module "instance" { 
 
-  source = "./folder" 
+  source = "./module" 
 
   ami = "ami-00068cd7555f543d5" 
 
