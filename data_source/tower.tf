@@ -16,8 +16,8 @@ output "centos" {
 }
 
 resource "aws_key_pair" "towerkey" {
-key_name   = "towerkey"
-public_key = file("~/.ssh/id_rsa.pub")
+  key_name   = "towerkey"
+  public_key = file("~/.ssh/id_rsa.pub")
 }
 resource "aws_instance" "tower" {
   ami           = "${data.aws_ami.centos.id}"
