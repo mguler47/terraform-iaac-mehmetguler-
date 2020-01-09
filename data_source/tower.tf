@@ -11,7 +11,7 @@ data "aws_ami" "centos" {
     most_recent = true
     owners = ["679593333241"] 
 }
-output = "tower" {
+output = "centos" {
     value = "data.aws_ami.centos.id"
 
 }
