@@ -1,7 +1,3 @@
-provider "aws" {
-    region = "us-east-1" 
-}
-
 data "aws_ami" "centos" {
     filter {
         name = "root-device-type" 
@@ -26,7 +22,7 @@ resource "aws_key_pair" "towerkey" {
 } 
 
 
-resource "aws_instance" "web" {
+resource "aws_instance" "tower" {
   ami           = "data.aws_ami.centos.id"
   instance_type = "t2.micro"
   key_name =aws_key_pair.towerkey.key_name
