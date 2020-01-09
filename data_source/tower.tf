@@ -11,8 +11,7 @@ data "aws_ami" "centos" {
     most_recent = true
     owners = ["679593333241"] 
 }
-
-output "ami" {
+output = "tower" {
     value = "data.aws_ami.centos.id"
 
 }
@@ -40,13 +39,10 @@ provisioner "remote-exec" {
          }
          tags = {
              Name = "HelloWorld"
-    } 
-    }
-    tags = {
-    Name = "HelloWorld"
-  }
-}
-
+             }
+         tags {
+             Name = "HelloWorld"
+             }
 
 resource "aws_route53_record" "tower" { 
   zone_id = "Z27XYELYU6LHL5" 
