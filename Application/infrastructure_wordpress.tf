@@ -12,3 +12,4 @@ module "wordpress1" {
     Environment = "dev"
   }
 }
+
